@@ -513,7 +513,7 @@
 
       &:before {
         content: "";
-        background: #0A2F2A;
+        background: #0a2f2a;
         border: 2px solid #fff;
         border-radius: 100%;
         height: 16px;
@@ -566,7 +566,7 @@
 
         &::before {
           content: "";
-          background: #0A2F2A;
+          background: #0a2f2a;
           border: 2px solid #fff;
           border-radius: 100%;
           height: 16px;
@@ -606,12 +606,12 @@
     align-items: center;
 
     .ui-icon {
-      height: 22px;
+      height: 20px;
       width: 20px;
       display: block;
 
       &::after {
-        content: url("../images/icons/icon-arrow-right.svg");
+        content: url("../images/icon-arrow-left-calendar.svg");
         height: 16px;
       }
     }
@@ -631,13 +631,30 @@
     text-align: center;
 
     span {
-      // font-size: rem(18);
-      color: var(--text-secondary-01-default);
-      font-weight: 600;
+      color: var(--Brand-Verde-Escuro, #0a2f2a);
+
+      /* Body/Regular */
+      font-family: "RDModern";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 187.5% */
+
+      strong {
+        color: var(--Brand-Verde-Escuro, #0a2f2a);
+
+        /* Body/Regular Bold */
+        font-family: "RDModern";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 187.5% */
+      }
 
       &:nth-child(1) {
         &::after {
-          content: " /";
+          // content: " /";
+          content: "";
         }
       }
     }
@@ -649,17 +666,23 @@
 
   thead {
     th {
-      color: #212529;
-      font-size: 12px;
-      padding: 7px 14px;
+      color: var(--Grayscale-grayscale-color-500, #BBB);
       text-align: center;
-      font-weight: 700;
+      
+      /* Body/Regular */
+      font-family: "RDModern";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 187.5% */
+
+      padding-bottom: 8px;
     }
   }
 
   tbody {
     td {
-      padding: 0;
+      padding: 5px;
 
       a {
         color: #212529 !important;
@@ -667,9 +690,12 @@
         text-align: center;
         display: block;
         font-weight: normal;
-        padding: 4px 4px 16px 4px;
-        border: 1px solid #f0f0f0;
+        // padding: 4px 4px 16px 4px;
+        padding: 12px;
+        // border: 1px solid #f0f0f0;
         position: relative;
+        border-radius: 50px;
+        background: var(--Grayscale-grayscale-color-800, #FAFAFA);
 
         &::after {
           content: "";
@@ -681,6 +707,8 @@
           left: 50%;
           transform: translateX(-50%);
           bottom: 9px;
+
+          top: 35px;
         }
 
         &.ui-state-active {
