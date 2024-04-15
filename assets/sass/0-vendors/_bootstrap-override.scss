@@ -1,0 +1,68 @@
+// Bootstrap 4 grid override
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+  md: 1050px,
+  lg: 1200px,
+  xl: 1500px
+);
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 790px,
+  md: 970px,
+  lg: 1168px,
+  xl: 1440px
+);
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12;
+$grid-gutter-width:           24px;
+
+$enable-grid-classes:       true;
+
+// Color system
+
+$blue:    #004781 !default;
+$indigo:  #6610f2 !default;
+$purple:  #810063 !default;
+$pink:    #9f003b !default;
+$red:     #810022 !default;
+$orange:  #b66300 !default;
+$yellow:  #b66300 !default;
+$green:   #00813B !default;
+$teal:    #15683a !default;
+$cyan:    #17a2b8 !default;
+
+// Others
+
+.dropdown-menu {
+	min-width: initial !important;
+}
+
+
+.modal-backdrop {
+	background-color: #11562b !important;
+}
+.modal-backdrop.show {
+	opacity: .7 !important;
+}

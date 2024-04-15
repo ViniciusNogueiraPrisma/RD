@@ -1,0 +1,102 @@
+// ==========================================================================
+// MODULES > BUTTON ICON
+// BOOTSTRAP.SCSS REQUIRED
+// ==========================================================================
+// Add to variables file:
+//		  $color-config:(	 "blue":   #0000FF, 
+//							  "red":	#ff0000
+//		  );
+//		  **delete "blue" and "red", and add every main colors of your theme**
+
+[class*="btn-icon"]
+	display: inline-block
+	position: relative
+	width: 100%
+	padding: 10px 60px
+	border-radius: 3px 
+	text-decoration: none
+	overflow: hidden
+	color: #000
+	text-decoration: none
+	@include transition(all 0.2s ease-out)
+
+	&::before
+		display: block
+		content: " "
+		position: absolute
+		width: 100%
+		height: 100%
+		border-radius: 3px
+		background-color: rgba(#c0c0c0, .2)  
+		top: 0
+		left: -100%
+		-moz-transform: translate(50px, 0px)
+		-webkit-transform: translate(50px, 0px)
+		-o-transform: translate(50px, 0px)
+		-ms-transform: translate(50px, 0px)
+		transform: translate(50px, 0px)
+		z-index: 1
+		@include transition(all 0.2s ease-out)
+		
+	&:hover
+		text-decoration: none
+		color: #FFF
+		&::before
+			-moz-transform: translate(100%, 0px)
+			-webkit-transform: translate(100%, 0px)
+			-o-transform: translate(100%, 0px)
+			-ms-transform: translate(100%, 0px)
+			transform: translate(100%, 0px)
+		.left-icon
+			color: #FFF !important
+		.right-icon
+			opacity: 1 
+			color: #FFF
+
+	.right-icon
+		display: block
+		position: absolute
+		right: 0
+		top: 0
+		height: 100%
+		padding: 10px
+		z-index: 2
+		opacity: 0
+		width: 50px
+		text-align: center
+		@include transition(all 0.2s ease-out)
+
+	.content
+		position: relative
+		z-index: 2
+
+	.left-icon
+		display: block
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		padding: 10px
+		z-index: 2
+		width: 50px
+		text-align: center
+		*
+			line-height: 20px
+
+	@each $color in $color-config
+		// #{nth($color, 1)}
+		&[class*="-#{nth($color, 1)} "]
+			.left-icon
+				color: nth($color, 2)
+			&:hover
+				&::before
+					background-color: nth($color, 2)
+
+
+
+
+
+

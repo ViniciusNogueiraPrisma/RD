@@ -1,0 +1,38 @@
+// ==========================================================================
+// BASICS > BACKGROUND COLORS
+// ==========================================================================
+
+@each $value in $color-config
+	.lay-bg-#{nth($value, 1)}
+		background-color: nth($value, 2)
+
+	.lay-bg-10-#{nth($value, 1)}
+		background-color: rgba(nth($value, 2), .1)
+
+	.lay-bg-20-#{nth($value, 1)}
+		background-color: rgba(nth($value, 2), .2)
+
+	.lay-bg-30-#{nth($value, 1)}
+		background-color: rgba(nth($value, 2), .3)
+
+	.lay-bg-40-#{nth($value, 1)}
+		background-color: rgba(nth($value, 2), .4)
+
+	.lay-bg-50-#{nth($value, 1)}
+		background-color: rgba(nth($value, 2), .5)
+
+	.lay-bg-60-#{nth($value, 1)}
+		background-color: rgba(nth($value, 2), .6)
+
+	.lay-bg-70-#{nth($value, 1)}
+		background-color: rgba(nth($value, 2), .7)
+
+	.lay-bg-80-#{nth($value, 1)}
+		background-color: rgba(nth($value, 2), .8)
+
+	.lay-bg-90-#{nth($value, 1)}
+		background-color: rgba(nth($value, 2), .9)
+
+@each $value in $color-config
+	.lay-bg-hover-#{nth($value, 1)}:hover
+		background-color: nth($value, 2) !important

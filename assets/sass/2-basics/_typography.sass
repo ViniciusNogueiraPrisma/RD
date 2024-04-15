@@ -1,0 +1,90 @@
+// ==========================================================================
+// BASICS > TYPOGRAPHY
+// ==========================================================================
+
+p 
+	color: var(--Text-Texto-Default, #0A2F2A)
+	// font-family: "RDModern"
+	font-size: 16px
+	font-style: normal
+	font-weight: 400
+	line-height: 30px
+
+h3 
+	color: var(--Text-Texto-Default, #0A2F2A)
+	// font-family: "RDModern"
+	font-size: 32px
+	font-style: normal
+	font-weight: 600
+	line-height: 38.4px
+
+.font-montserrat,
+.font-montserrat *
+	font-family:'RDModern', Verdana, Helvetica, Arial, sans-serif
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+	font-weight: bold
+	line-height: initial
+
+p
+	margin: 0 0 24px 0
+
+em
+	font-style: italic
+
+strong
+	font-weight: bold
+
+hr
+	border: solid #ddd
+	border-width: 1px 0 0
+	clear: both
+	margin: 30px 0 30px
+	height: 0
+	width:50%
+
+
+@each $color in $color-config
+	.lay-color-#{nth($color, 1)}, 
+	.lay-color-#{nth($color, 1)}:hover, 
+	.lay-color-#{nth($color, 1)}:active , 
+	.lay-color-#{nth($color, 1)}:focus , 
+	.lay-color-#{nth($color, 1)}:visited,
+	.lay-color-#{nth($color, 1)} *, 
+	.lay-color-#{nth($color, 1)} *:hover, 
+	.lay-color-#{nth($color, 1)} *:active , 
+	.lay-color-#{nth($color, 1)} *:focus , 
+	.lay-color-#{nth($color, 1)} *:visited
+		color: nth($color, 2)
+
+	.lay-color-hover-#{nth($color, 1)}:hover,
+	.lay-color-hover-#{nth($color, 1)}:hover *,
+	.lay-color-hover-#{nth($color, 1)} *:hover,
+	.lay-color-hover-#{nth($color, 1)} *:hover *
+		color: nth($color, 2) !important
+
+@each $value in $fontsize-config 
+	.font-#{nth($value, 1)}
+		font-size: nth($value, 2)
+
+@include media-breakpoint-down(lg)
+	@each $value in $fontsize-config 
+		.font-#{nth($value, 1)}
+			font-size: nth($value, 3)
+
+@include media-breakpoint-down(md)
+	@each $value in $fontsize-config 
+		.font-#{nth($value, 1)}
+			font-size: nth($value, 4)
+
+@include media-breakpoint-down(sm)
+	@each $value in $fontsize-config 
+		.font-#{nth($value, 1)}
+			font-size: nth($value, 5)
+
+@include media-breakpoint-down(xs)
+	@each $value in $fontsize-config 
+		.font-#{nth($value, 1)}
+			font-size: nth($value, 6)
+
+			

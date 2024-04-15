@@ -1,0 +1,135 @@
+//
+// Base styles
+//
+
+.alert {
+  position: relative;
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $alert-margin-bottom;
+  border: $alert-border-width solid transparent;
+  @include border-radius($alert-border-radius);
+}
+
+// Headings for larger alerts
+.alert-heading {
+  // Specified to prevent conflicts of changing $headings-color
+  color: inherit;
+}
+
+// Provide class for links that match alerts
+.alert-link {
+  font-weight: $alert-link-font-weight;
+}
+
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissible {
+  padding-right: $close-font-size + $alert-padding-x * 2;
+
+  // Adjust close link position
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $alert-padding-y $alert-padding-x;
+    color: inherit;
+  }
+}
+
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
+  }
+}
+
+/* SPLASH */
+
+#Lbanner{
+  background-color: rgba(0,0,0,.70);
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000000;
+  position: fixed;
+  overflow-y: auto;
+  font-family: RDModern, Verdana, Helvetica, Arial, sans-serif;
+}
+
+.Lbanner-position{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  transform: translateY(-50%);
+}
+
+@media (max-height: 600px){
+  .Lbanner-position{
+  transform: none;
+  top: auto;
+}
+}
+
+#Lbanner .Lbanner-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+}
+
+#Lbanner  .alertaSplash {
+  height: 100%;
+  width: 100%;
+    max-width: 475px;
+}
+
+#Lbanner  #splash {
+  border-radius: 8px 0px 8px 8px;
+  margin: 0 16px;
+}
+#Lbanner  .btn-fechar {
+  position: relative;
+}
+
+#Lbanner  .btn-fechar a{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  text-decoration: none;
+  padding: 8px;
+  display: inline-block;
+  border-radius: 4px 4px 0px 0px;
+}
+
+#Lbanner .conteudo {
+  padding: 40px 50px 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#Lbanner .logo-cliente{
+  margin-bottom: 35px;
+}
+#Lbanner .conteudo h2{
+  margin-bottom: 16px;
+}
+
+.botao-splash{
+  margin-top: 14px;
+  padding: 10px 50px;
+  margin-bottom: 10px;
+}

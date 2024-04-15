@@ -1,0 +1,2373 @@
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-Thin.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-Thin.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-Thin.ttf") format("truetype");
+
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-ThinItalic.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-ThinItalic.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-ThinItalic.ttf") format("truetype");
+
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-ExtraLight.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-ExtraLight.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-ExtraLight.ttf") format("truetype");
+
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-ExtraLightItalic.woff")
+      format("woff"),
+    url("/assets/fonts/RDModern/RDModern-ExtraLightItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-ExtraLightItalic.ttf")
+      format("truetype");
+
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-Light.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-Light.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-Light.ttf") format("truetype");
+
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-LightItalic.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-LightItalic.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-LightItalic.ttf") format("truetype");
+
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-Regular.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-Regular.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-Regular.ttf") format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-Italic.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-Italic.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-Italic.ttf") format("truetype");
+
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-Medium.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-Medium.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-Medium.ttf") format("truetype");
+
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-MediumItalic.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-MediumItalic.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-MediumItalic.ttf") format("truetype");
+
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-SemiBold.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-SemiBold.ttf") format("truetype");
+
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-SemiBoldItalic.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-SemiBoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-SemiBoldItalic.ttf") format("truetype");
+
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-Bold.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-Bold.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-Bold.ttf") format("truetype");
+
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-BoldItalic.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-BoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-BoldItalic.ttf") format("truetype");
+
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-ExtraBold.woff") format("woff"),
+    url("/assets/fonts/RDModern/RDModern-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-ExtraBold.ttf") format("truetype");
+
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDModern";
+
+  src: url("/assets/fonts/RDModern/RDModern-ExtraBoldItalic.woff")
+      format("woff"),
+    url("/assets/fonts/RDModern/RDModern-ExtraBoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-ExtraBoldItalic.ttf")
+      format("truetype");
+
+  font-weight: 800;
+  font-style: italic;
+}
+
+// RD CONTRAST
+
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-Thin.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-Thin.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-Thin.ttf") format("truetype");
+
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-ThinItalic.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-ThinItalic.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-ThinItalic.ttf") format("truetype");
+
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-ExtraLight.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-ExtraLight.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-ExtraLight.ttf") format("truetype");
+
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-ExtraLightItalic.woff")
+      format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-ExtraLightItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-ExtraLightItalic.ttf")
+      format("truetype");
+
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-Light.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-Light.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-Light.ttf") format("truetype");
+
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-LightItalic.woff")
+      format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-LightItalic.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-LightItalic.ttf")
+      format("truetype");
+
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-Regular.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-Regular.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-Regular.ttf") format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-Italic.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-Italic.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-Italic.ttf") format("truetype");
+
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-Medium.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-Medium.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-Medium.ttf") format("truetype");
+
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-MediumItalic.woff")
+      format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-MediumItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-MediumItalic.ttf")
+      format("truetype");
+
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-SemiBold.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-SemiBold.ttf") format("truetype");
+
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-SemiBoldItalic.woff")
+      format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-SemiBoldItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-SemiBoldItalic.ttf")
+      format("truetype");
+
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-Bold.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-Bold.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-Bold.ttf") format("truetype");
+
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-BoldItalic.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-BoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-BoldItalic.ttf") format("truetype");
+
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-ExtraBold.woff") format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/RDContrast/RDContrast-ExtraBold.ttf") format("truetype");
+
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RDContrast";
+
+  src: url("/assets/fonts/RDContrast/RDContrast-ExtraBoldItalic.woff")
+      format("woff"),
+    url("/assets/fonts/RDContrast/RDContrast-ExtraBoldItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/RDModern/RDModern-ExtraBoldItalic.ttf")
+      format("truetype");
+
+  font-weight: 800;
+  font-style: italic;
+}
+
+// stylelint-disable at-rule-no-vendor-prefix, declaration-no-important, selector-no-qualifying-type, property-no-vendor-prefix
+
+// Reboot
+//
+// Normalization of HTML elements, manually forked from Normalize.css to remove
+// styles targeting irrelevant browsers while applying new styles.
+//
+// Normalize is licensed MIT. https://github.com/necolas/normalize.css
+
+// Document
+//
+// 1. Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+// 2. Change the default font family in all browsers.
+// 3. Correct the line height in all browsers.
+// 4. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+// 5. Change the default tap highlight to be completely transparent in iOS.
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // 1
+}
+
+html {
+  font-family: sans-serif; // 2
+  line-height: 1.15; // 3
+  -webkit-text-size-adjust: 100%; // 4
+  -webkit-tap-highlight-color: rgba($black, 0); // 5
+}
+
+// Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers)
+// TODO: remove in v5
+// stylelint-disable-next-line selector-list-comma-newline-after
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+// Body
+//
+// 1. Remove the margin in all browsers.
+// 2. As a best practice, apply a default `background-color`.
+// 3. Set an explicit initial text-align value so that we can later use
+//    the `inherit` value on things like `<th>` elements.
+
+body {
+  margin: 0; // 1
+  font-family: $font-family-base;
+  @include font-size($font-size-base);
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  text-align: left; // 3
+  background-color: $body-bg; // 2
+}
+
+// Suppress the focus outline on elements that cannot be accessed via keyboard.
+// This prevents an unwanted focus outline from appearing around elements that
+// might still respond to pointer events.
+//
+// Credit: https://github.com/suitcss/base
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+// Content grouping
+//
+// 1. Add the correct box sizing in Firefox.
+// 2. Show the overflow in Edge and IE.
+
+hr {
+  box-sizing: content-box; // 1
+  height: 0; // 1
+  overflow: visible; // 2
+}
+
+//
+// Typography
+//
+
+// Remove top margins from headings
+//
+// By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
+// margin for easier control within type scales as it avoids margin collapsing.
+// stylelint-disable-next-line selector-list-comma-newline-after
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
+}
+
+// Reset margins on paragraphs
+//
+// Similarly, the top margin on `<p>`s get reset. However, we also reset the
+// bottom margin to use `rem` units instead of `em`.
+p {
+  margin-top: 0;
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+// Abbreviations
+//
+// 1. Duplicate behavior to the data-* attribute for our tooltip plugin
+// 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+// 3. Add explicit cursor to indicate changed behavior.
+// 4. Remove the bottom border in Firefox 39-.
+// 5. Prevent the text-decoration to be skipped.
+
+abbr[title],
+abbr[data-original-title] {
+  // 1
+  text-decoration: underline; // 2
+  text-decoration: underline dotted; // 2
+  cursor: help; // 3
+  border-bottom: 0; // 4
+  text-decoration-skip-ink: none; // 5
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: $dt-font-weight;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0; // Undo browser default
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+b,
+strong {
+  font-weight: $font-weight-bolder; // Add the correct font weight in Chrome, Edge, and Safari
+}
+
+small {
+  @include font-size(80%); // Add the correct font size in all browsers
+}
+
+//
+// Prevent `sub` and `sup` elements from affecting the line height in
+// all browsers.
+//
+
+sub,
+sup {
+  position: relative;
+  @include font-size(75%);
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+
+//
+// Links
+//
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  background-color: transparent; // Remove the gray background on active links in IE 10.
+
+  @include hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+// And undo these styles for placeholder links/named anchors (without href)
+// which have not been made explicitly keyboard-focusable (without tabindex).
+// It would be more straightforward to just use a[href] in previous block, but that
+// causes specificity issues in many other styles that are too complex to fix.
+// See https://github.com/twbs/bootstrap/issues/19402
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+
+  @include hover-focus {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+//
+// Code
+//
+
+pre,
+code,
+kbd,
+samp {
+  font-family: $font-family-monospace;
+  @include font-size(1em); // Correct the odd `em` font sizing in all browsers.
+}
+
+pre {
+  // Remove browser default top margin
+  margin-top: 0;
+  // Reset browser default of `1em` to use `rem`s
+  margin-bottom: 1rem;
+  // Don't allow content to break outside
+  overflow: auto;
+}
+
+//
+// Figures
+//
+
+figure {
+  // Apply a consistent margin strategy (matches our type styles).
+  margin: 0 0 1rem;
+}
+
+//
+// Images and content
+//
+
+img {
+  vertical-align: middle;
+  border-style: none; // Remove the border on images inside links in IE 10-.
+}
+
+svg {
+  // Workaround for the SVG overflow bug in IE10/11 is still required.
+  // See https://github.com/twbs/bootstrap/issues/26878
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+//
+// Tables
+//
+
+table {
+  border-collapse: collapse; // Prevent double borders
+}
+
+caption {
+  padding-top: $table-cell-padding;
+  padding-bottom: $table-cell-padding;
+  color: $table-caption-color;
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  // Matches default `<td>` alignment by inheriting from the `<body>`, or the
+  // closest parent with a set `text-align`.
+  text-align: inherit;
+}
+
+//
+// Forms
+//
+
+label {
+  // Allow labels to use `margin` for spacing.
+  display: inline-block;
+  margin-bottom: $label-margin-bottom;
+}
+
+// Remove the default `border-radius` that macOS Chrome adds.
+//
+// Details at https://github.com/twbs/bootstrap/issues/24093
+button {
+  // stylelint-disable-next-line property-blacklist
+  border-radius: 0;
+}
+
+// Work around a Firefox/IE bug where the transparent `button` background
+// results in a loss of the default `button` focus styles.
+//
+// Credit: https://github.com/suitcss/base/
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0; // Remove the margin in Firefox and Safari
+  font-family: inherit;
+  @include font-size(inherit);
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible; // Show the overflow in Edge
+}
+
+button,
+select {
+  text-transform: none; // Remove the inheritance of text transform in Firefox
+}
+
+// Remove the inheritance of word-wrap in Safari.
+//
+// Details at https://github.com/twbs/bootstrap/issues/24990
+select {
+  word-wrap: normal;
+}
+
+// 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+//    controls in Android 4.
+// 2. Correct the inability to style clickable types in iOS and Safari.
+button,
+[type="button"], // 1
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; // 2
+}
+
+// Opinionated: add "hand" cursor to non-disabled button elements.
+@if $enable-pointer-cursor-for-buttons {
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+  }
+}
+
+// Remove inner border and padding from Firefox, but don't restore the outline like Normalize.
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box; // 1. Add the correct box sizing in IE 10-
+  padding: 0; // 2. Remove the padding in IE 10-
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  // Remove the default appearance of temporal inputs to avoid a Mobile Safari
+  // bug where setting a custom line-height prevents text from being vertically
+  // centered within the input.
+  // See https://bugs.webkit.org/show_bug.cgi?id=139848
+  // and https://github.com/twbs/bootstrap/issues/11266
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  overflow: auto; // Remove the default vertical scrollbar in IE.
+  // Textareas should really only resize vertically so they don't break their (horizontal) containers.
+  resize: vertical;
+}
+
+fieldset {
+  // Browsers set a default `min-width: min-content;` on fieldsets,
+  // unlike e.g. `<div>`s, which have `min-width: 0;` by default.
+  // So we reset that to ensure fieldsets behave more like a standard block element.
+  // See https://github.com/twbs/bootstrap/issues/12359
+  // and https://html.spec.whatwg.org/multipage/#the-fieldset-and-legend-elements
+  min-width: 0;
+  // Reset the default outline behavior of fieldsets so they don't affect page layout.
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+// 1. Correct the text wrapping in Edge and IE.
+// 2. Correct the color inheritance from `fieldset` elements in IE.
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%; // 1
+  padding: 0;
+  margin-bottom: 0.5rem;
+  @include font-size(1.5rem);
+  line-height: inherit;
+  color: inherit; // 2
+  white-space: normal; // 1
+}
+
+progress {
+  vertical-align: baseline; // Add the correct vertical alignment in Chrome, Firefox, and Opera.
+}
+
+// Correct the cursor style of increment and decrement buttons in Chrome.
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  // This overrides the extra rounded corners on search inputs in iOS so that our
+  // `.form-control` class can properly style them. Note that this cannot simply
+  // be added to `.form-control` as it's not specific enough. For details, see
+  // https://github.com/twbs/bootstrap/issues/11586.
+  outline-offset: -2px; // 2. Correct the outline style in Safari.
+  -webkit-appearance: none;
+}
+
+//
+// Remove the inner padding in Chrome and Safari on macOS.
+//
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+//
+// 1. Correct the inability to style clickable types in iOS and Safari.
+// 2. Change font properties to `inherit` in Safari.
+//
+
+::-webkit-file-upload-button {
+  font: inherit; // 2
+  -webkit-appearance: button; // 1
+}
+
+//
+// Correct element displays
+//
+
+output {
+  display: inline-block;
+}
+
+summary {
+  display: list-item; // Add the correct display in all browsers
+  cursor: pointer;
+}
+
+template {
+  display: none; // Add the correct display in IE
+}
+
+// Always hide an element with the `hidden` HTML attribute (from PureCSS).
+// Needed for proper display in IE 10-.
+[hidden] {
+  display: none !important;
+}
+
+.tab-content {
+  width: 100%;
+
+  .table-governanca {
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          cursor: pointer;
+        }
+        td {
+          &:first-child {
+            cursor: pointer;
+            transition: all 0.2s ease-out;
+            color: #016f33;
+            background-position: left 20px center;
+            background-size: 7px;
+            background-repeat: no-repeat;
+            background-image: url("../images/arrow-01-bottom-green.png");
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+
+        &:not(.accordion-collapse):not(.collapsed) {
+          td {
+            &:first-child {
+              background-image: url("../images/arrow-01-top-white.png");
+            }
+          }
+        }
+
+        &.accordion-collapse {
+          td {
+            img {
+              margin: 0px;
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+#footer-page {
+  .lay-bg-gray {
+    background-color: #0a2f2a;
+
+    h5 {
+      color: #fffec7;
+      font-size: 24px;
+      font-weight: 500 !important;
+      margin-bottom: 30px;
+    }
+
+    .list-group {
+      a {
+        color: #ffffff;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .radius-footer {
+    border-radius: 55px;
+  }
+
+  .footer-indices {
+    padding: 24px 0;
+    background-color: #4ca15d;
+    border-radius: 55px;
+
+    .selos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      //border-top: 1px solid #fff;
+      //padding-top: 15px;
+      flex-wrap: wrap;
+
+      img {
+        filter: brightness(24) grayscale(1) contrast(15);
+      }
+    }
+  }
+
+  .footer-copy {
+    background: #4ca15d;
+    padding: 30px 0;
+    color: #fff;
+    border-radius: 55px;
+
+    .texto-copy {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+
+      p {
+        margin-bottom: 0;
+        color: #fff;
+        font-weight: 100;
+        font-size: 18px;
+      }
+
+      span {
+        font-weight: 100;
+
+        @media (max-width: 638px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#header-page {
+  #header-top-menu {
+    padding: 10px 0 0 0;
+
+    @media (max-width: 1049px) {
+      display: none;
+    }
+
+    .topbar-content {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 15px;
+
+      a {
+        font-size: 14px;
+        color: #0a2f2a;
+      }
+    }
+  }
+
+  .header-principal {
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0 20px 0;
+      align-items: center;
+    }
+  }
+}
+
+.btn-search {
+  color: #0a2f2a !important;
+  padding: 0 !important;
+
+  .feather-search {
+    width: 20px;
+  }
+}
+
+.btn-menu-mobile {
+  color: #0a2f2a !important;
+}
+
+.menu-flex {
+  display: flex;
+}
+
+#header-logo-desk {
+  @media (max-width: 1049px) {
+    position: inherit !important;
+  }
+}
+
+.searchbox {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  transform: translateY(-100%) !important;
+  padding: 32px 0 !important;
+  z-index: 1000 !important;
+  background-color: #ffffff !important;
+  transition: transform 0.2s linear !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  padding: 37px 49px !important;
+
+  &.show {
+    transform: translate(0) !important;
+    transition: transform 0.2s linear !important;
+  }
+}
+
+.owl-banner {
+  .owl-height {
+    border-radius: 55px;
+  }
+}
+
+.btn-verde-claro {
+  background-color: #4ca15d;
+  border-radius: 35px;
+  color: #ffffff;
+  padding: 17px 42px;
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  transition: all 0.3s;
+
+  @media (max-width: 1049px) {
+    padding: 13px 32px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #0a2f2a;
+    transition: all 0.3s;
+
+    img {
+      filter: brightness(0);
+    }
+  }
+}
+
+.btn-laranja {
+  background-color: #d66e0f;
+  border-radius: 35px;
+  color: #ffffff;
+  border: 1px solid #d66e0f;
+  padding: 10px 42px;
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  transition: all 0.3s;
+
+  @media (max-width: 1049px) {
+    padding: 13px 32px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #f4b36f;
+    transition: all 0.3s;
+  }
+}
+
+.destaques-home {
+  section:first-child {
+    border-right: 1px solid rgba(168, 155, 145, 0.21);
+    padding-right: 43px;
+  }
+
+  section:last-child {
+    border-left: 1px solid rgba(168, 155, 145, 0.21);
+    padding-left: 43px;
+  }
+
+  h3 {
+    font-family: "RDContrast";
+    color: #0a2f2a;
+    font-size: 30px;
+    font-weight: 500;
+
+    @media (max-width: 1049px) {
+      font-size: 32px;
+    }
+  }
+
+  #ulResultados {
+    gap: 8px;
+
+    li {
+      a {
+        border: 1px solid #d66e0f;
+        color: #d66e0f;
+        font-weight: 300;
+        border-radius: 30px;
+
+        &:hover {
+          background-color: #fffec7;
+        }
+
+        &.active {
+          background-color: #4ca15d;
+          border: 1px solid #4ca15d;
+          color: #ffffff;
+          border-radius: 30px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.divCentral {
+  .icon-video-home {
+    .icomoon-video {
+      &::before {
+        content: url(/assets/images/icons/icon-video-home.svg) !important;
+      }
+    }
+  }
+
+  .iconeCentral {
+    height: 27px;
+  }
+
+  .left-side-central-home {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    .content {
+      font-size: 18px;
+      color: #0a2f2a;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    margin-bottom: 0 !important;
+    border-radius: 0;
+    transition: all 0.2s ease-out;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #a89b91;
+    }
+
+    &:hover {
+      background-color: #e9e9e9b2;
+      padding: 24px 16px;
+
+      .iconeCentral {
+        &::before {
+          &:hover {
+            filter: none;
+          }
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      .left-side-central-home {
+        .iconeCentral {
+          .icomoon-bars {
+            &::before {
+              content: url(/assets/images/icons/icon-resultados-home.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .left-side-central-home {
+        .iconeCentral {
+          .icomoon-file-txt {
+            &::before {
+              content: url(/assets/images/icons/icon-itr-home.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .left-side-central-home {
+        .iconeCentral {
+          .icomoon-presentation {
+            &::before {
+              content: url(/assets/images/icons/icon-apresentacao-home.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .left-side-central-home {
+        .iconeCentral {
+          .icomoon-audio {
+            &::before {
+              content: url(/assets/images/icons/icon-audio-home.svg);
+            }
+          }
+        }
+      }
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.eventosHome {
+  a {
+    display: flex;
+    align-items: center;
+    border-radius: 0 !important;
+    margin-bottom: 0;
+
+    .text-dark {
+      color: #0a2f2a;
+    }
+
+    .icomoon-clock {
+      color: #0a2f2a !important;
+    }
+
+    h5 {
+      font-size: 18px;
+      font-weight: 400 !important;
+      color: #0a2f2a;
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #a89b91;
+      padding-bottom: 16px;
+    }
+
+    .rounded {
+      background-color: #4ca15d;
+      padding: 32px 7px;
+      border-radius: 30px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      div {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 110%;
+      }
+    }
+  }
+}
+
+.box-noticias-home {
+  a.transition-01 {
+    border-radius: 0 !important;
+    font-size: 18px;
+    font-weight: 300;
+    color: #016f33;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #a89b91;
+      padding-bottom: 24px !important;
+    }
+
+    &:not(:first-of-type) {
+      padding-top: 24px !important;
+    }
+
+    h5 {
+      font-size: 24px;
+      color: #0a2f2a;
+      font-weight: 300 !important;
+    }
+  }
+}
+
+.section-conheca-rd {
+  padding-bottom: 64px;
+
+  .item {
+    padding: 45px;
+    border-radius: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        color: #ffffff;
+      }
+    }
+
+    h2 {
+      font-size: 38px;
+      font-weight: 500;
+      font-family: "RDContrast";
+      margin-bottom: 30px;
+    }
+  }
+
+  .box-central {
+    .grid-noticias {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      @media (max-width: 1049px) {
+        grid-template-columns: 1fr;
+      }
+
+      .item-light-green {
+        background-color: #4ca15d;
+
+        a {
+          .icone {
+            background-color: #0a2f2a;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            text-decoration: none;
+
+            .icone {
+              background-color: #ffffff;
+
+              img {
+                filter: brightness(0);
+              }
+            }
+          }
+        }
+
+        h2 {
+          color: #ffffff;
+        }
+      }
+
+      .item-dark-green {
+        background-color: #0a2f2a;
+
+        a {
+          .icone {
+            background-color: #4ca15d;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            text-decoration: none;
+
+            .icone {
+              background-color: #ffffff;
+
+              img {
+                filter: brightness(0);
+              }
+            }
+          }
+        }
+
+        h2 {
+          color: #fffec7;
+        }
+      }
+    }
+  }
+}
+
+.grid-conheca {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  @media (max-width: 1049px) {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-empresas {
+    .imagem {
+      img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 55px;
+      }
+    }
+  }
+
+  .item-conheca {
+    background-color: #d66e0f;
+    justify-content: center;
+    padding: 22px !important;
+
+    h2 {
+      color: #ffffff;
+    }
+
+    p {
+      color: #ffffff;
+    }
+
+    a.btn-verde-escuro {
+      background-color: #0a2f2a;
+      padding: 15px 30px;
+      color: #ffffff;
+      transition: all 0.3s;
+      border-radius: 35px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #0a2f2a;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .item-empresas {
+    border-radius: 55px;
+    background-color: #4ca15d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+.idiomas.show {
+  .dropdown-menu {
+    padding: 0;
+    border: 0;
+    -webkit-box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+    a {
+      padding: 10px;
+      color: #0a2f2a;
+      display: flex;
+      justify-content: center;
+
+      &:last-of-type {
+        border-radius: 0 0 10px 10px;
+      }
+
+      &.active {
+        color: #0a2f2a !important;
+        background-color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.searchbox {
+  -webkit-box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.3);
+
+  .search-content {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #0a2f2a;
+
+    .icon-busca-interno {
+    }
+
+    .search-text-area {
+      width: 100%;
+
+      input {
+        border: none;
+        padding: 10px;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+.item-pesquisa {
+  display: flex;
+}
+
+.frame-home {
+  height: 80px;
+  overflow: hidden;
+  border-radius: 55px;
+
+  @media (max-width: 1049px) {
+    height: 150px;
+  }
+
+  @media (max-width: 768px) {
+    height: 160px;
+  }
+
+  @media (max-width: 376px) {
+    height: 180px;
+  }
+}
+
+.menu-mobile {
+  .dropdown-menu-right.show {
+    max-width: 450px;
+    width: 90vw;
+    border-radius: 0;
+    border: 0;
+    margin-left: 75px;
+    top: -10px !important;
+    -webkit-box-shadow: -5px 0px 7px 0px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: -5px 0px 7px 0px rgba(0, 0, 0, 0.33);
+    box-shadow: -5px 0px 7px 0px rgba(0, 0, 0, 0.23);
+    left: -40px !important;
+    padding-top: 40px;
+
+    @media (min-width: 565px) and (max-width: 790px) {
+      left: 32px !important;
+    }
+
+    @media (min-width: 790px) {
+      left: 0 !important;
+    }
+
+    .dropdown-item.disabled {
+      color: #4ca15d;
+      pointer-events: none;
+      padding: 15px 0;
+      font-weight: 500;
+    }
+
+    .dropdown-item.pl-5 {
+      padding-left: 10px !important;
+      color: #0a2f2a;
+      white-space: break-spaces;
+    }
+  }
+}
+
+.flex-institucional-idiomas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #a89b91;
+
+  .link-inst {
+    font-size: 15px;
+    text-decoration: underline;
+    color: #0a2f2a;
+  }
+
+  .idiomas-mobile {
+    display: flex;
+    align-items: center;
+
+    a {
+      padding: 0 !important;
+      background: none !important;
+      color: #0a2f2a;
+      font-size: 14px;
+
+      &.active {
+        font-weight: 600;
+        text-decoration: underline;
+        color: #016f33;
+      }
+    }
+  }
+}
+
+.h-interna {
+  margin-top: 0 !important;
+}
+
+.header-interno {
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.54) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+#maincontent {
+  padding-top: 50px !important;
+}
+
+.row-footer {
+  display: flex;
+  justify-content: space-between;
+  // gap: 40px;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+
+  .item-row-footer {
+    width: fit-content !important;
+    max-width: 17% !important;
+    padding: 0 !important;
+  }
+}
+
+.language-footer {
+  display: flex;
+  gap: 22px;
+
+  .item {
+    a {
+      display: flex;
+      gap: 4px;
+    }
+
+    span {
+      color: var(--Branco, #fff);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 187.5% */
+    }
+  }
+}
+
+.itens-banner-interno {
+  display: flex;
+  justify-content: space-between;
+
+  .item-1 {
+    // width: 100%;
+    // position: sticky;
+    // height: 100%;
+    // top: 120px;
+
+    .title {
+      background-color: #0a2f2a;
+      border-radius: 55px;
+      padding: 40px 32px;
+
+      span {
+        color: var(--Brand-Amarelo-Claro, #fffec7);
+
+        /* Button/Large */
+        // font-family: Archivo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; /* 20px */
+      }
+
+      h3 {
+        margin-top: 8px;
+        margin-bottom: 0px;
+        color: var(--Branco, #fff);
+        font-family: "RDContrast";
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 49px; /* 94.231% */
+      }
+    }
+  }
+}
+
+.item-2 {
+  width: 100%;
+
+  .img-banner {
+    img {
+      border-radius: 55px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.vector {
+  background-color: #4ca15d;
+  width: 100%;
+  height: 50px;
+  border-radius: 55px;
+}
+
+.pagination-item {
+  margin-top: 48px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  a.active {
+    background-color: #4ca15d;
+    color: white;
+    border: 1px solid #4ca15d;
+  }
+
+  a {
+    width: fit-content;
+    padding: 12px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 1px solid #d66e0f;
+    color: var(--Brand-Laranja, #d66e0f);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16.8px;
+  }
+}
+
+.itens-2 {
+  display: flex;
+  margin-top: 48px;
+
+  .img {
+    width: 100%;
+    img {
+      border-radius: 55px;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  .text-first {
+    padding: 32px;
+    border-radius: 55px;
+    background: #d66e0f;
+
+    h3 {
+      color: var(--Brand-Verde-Escuro, #0a2f2a);
+
+      /* Titles/Desktop/H3 */
+      // font-family: "RD Contrast";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 38.4px; /* 120% */
+    }
+
+    span {
+      color: var(--Branco, #fff);
+
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+}
+
+.border-55 {
+  border-radius: 55px;
+}
+
+.display-r {
+  display: flex;
+  flex-direction: row-reverse !important;
+}
+
+.bg-green-dark {
+  background-color: #0a2f2a !important;
+}
+
+.bg-green-light {
+  background-color: #4ca15d !important;
+}
+
+.imgs-flex-itens {
+  .title-flex {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      color: var(--Brand-Verde-Escuro, #0a2f2a);
+      text-align: center;
+
+      /* Body/Regular */
+      // font-family: "RD Modern";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 187.5% */
+    }
+
+    small {
+      color: var(--Brand-Marrom-Claro, #a89b91);
+      text-align: center;
+
+      /* Body/Small */
+      // font-family: "RD Modern";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.text-qs {
+  margin-top: 64px;
+  p {
+    color: var(--Text-Texto-Default, #0a2f2a);
+
+    font-family: "RDModern";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+  }
+}
+
+.img-clientes {
+  margin-top: 64px;
+
+  img {
+    border-radius: 55px;
+    object-fit: cover;
+  }
+}
+
+.nossas-marcas-qs {
+  display: flex;
+  margin-top: 64px;
+
+  .img {
+    height: 100%;
+
+    img {
+      border-radius: 55px;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  .text-nm {
+    display: flex;
+    flex-direction: column;
+
+    .first-box {
+      border-radius: 55px;
+      padding: 32px;
+      background-color: #d66e0f;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+
+      h3 {
+        color: var(--Brand-Verde-Escuro, #0a2f2a);
+
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 120% */
+      }
+
+      span {
+        color: var(--Branco, #fff);
+
+        font-family: "RDModern";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 187.5%; /* 187.5% */
+      }
+    }
+
+    .link {
+      margin-top: 24px;
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        align-items: center;
+
+        &:hover {
+          .icone {
+            background-color: #ffffff;
+            transition: all 0.3s ease-in-out;
+          }
+
+          img {
+            filter: brightness(0);
+          }
+        }
+
+        .icone {
+          background-color: #0a2f2a;
+          border-radius: 50%;
+          padding: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.valores {
+  margin-top: 64px;
+
+  .title-valores {
+    h3 {
+      color: var(--Brand-Verde-Escuro, #0a2f2a);
+
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 38.4px;
+    }
+  }
+}
+
+.itens-valores {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  .texts-valores {
+    h3 {
+      color: var(--Brand-Verde-Escuro, #0a2f2a);
+
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 38.4px; /* 120% */
+    }
+
+    p {
+      color: var(--Brand-Verde-Escuro, #0a2f2a);
+
+      /* Body/Regular */
+      font-family: "RDModern";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 187.5% */
+    }
+  }
+}
+
+.cards-valores {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  .card {
+    border-radius: 55px;
+    border: unset;
+    box-shadow: unset;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 38.4px; /* 120% */
+
+      margin-bottom: 8px;
+    }
+
+    p {
+      text-align: center;
+      font-family: "RDModern";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 187.5% */
+      margin: 0 !important;
+    }
+
+    a {
+      margin-top: 24px;
+
+      border-radius: 20px;
+      text-decoration: none;
+      padding: 12px 24px;
+
+      background-color: #d66e0f;
+      width: fit-content;
+      color: var(--Branco, #fff);
+
+      font-family: "RDModern";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16.8px; /* 120% */
+    }
+  }
+
+  .card:nth-child(1) {
+    background-color: #4ca15d;
+
+    h3 {
+      color: var(--Brand-Verde-Escuro, #0a2f2a);
+    }
+
+    p {
+      color: #ffffff;
+    }
+  }
+
+  .card:nth-child(2) {
+    background-color: #fffec7;
+
+    h3 {
+      color: #0a2f2a;
+    }
+
+    p {
+      color: #0a2f2a;
+    }
+  }
+
+  .card:nth-child(3) {
+    background-color: #0a2f2a;
+
+    h3 {
+      color: #fffec7;
+    }
+
+    p {
+      color: #ffffff;
+    }
+  }
+}
+
+.estrutura-acio {
+  h3 {
+    color: var(--Text-Texto-Default, #0a2f2a);
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38.4px; /* 120% */
+  }
+
+  p {
+    color: var(--Text-Texto-Default, #0a2f2a);
+
+    /* Body/Regular */
+    font-family: "RDModern";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+  }
+}
+
+.estrutura-gov {
+  margin-top: 64px;
+
+  h3 {
+    color: var(--Text-Texto-Default, #0a2f2a);
+
+    /* Titles/Desktop/H3 */
+    // font-family: "RD Contrast Variable";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38.4px; /* 120% */
+  }
+
+  p {
+    color: var(--Text-Texto-Default, #0a2f2a);
+
+    /* Body/Regular */
+    font-family: "RDModern";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+  }
+}
+
+.img-gov {
+  margin-top: 40px;
+}
+
+.tabs-gov {
+  margin: 64px 0px;
+
+  .nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    .nav-item {
+      flex-basis: unset;
+      flex-grow: unset;
+      text-align: unset;
+    }
+
+    .nav-link.active {
+      height: unset;
+      padding: 12px 24px;
+      border-radius: 22px;
+
+      &:hover {
+        border: 1px solid #4ca15d;
+      }
+    }
+
+    .nav-link {
+      height: unset;
+      border-radius: unset;
+      width: fit-content;
+
+      color: var(--Brand-Laranja, #d66e0f);
+
+      /* Button/Medium */
+      font-family: "RDModern";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      padding: 12px 24px;
+      border-radius: 20px;
+      border: 1px solid #d66e0f;
+      line-height: 120%; /* 120% */
+
+      &:hover {
+        border: 1px solid #d66e0f;
+      }
+    }
+  }
+
+  .tab-content {
+    margin-top: 48px;
+  }
+}
+
+.conselho-adm {
+  h3 {
+  }
+
+  p {
+    margin-top: 24px;
+  }
+}
+
+.accordions-adm {
+  margin: 64px 0px;
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .accordion-item {
+    .accordion-header {
+      margin: 0;
+      padding: 0;
+    }
+
+    .accordion-body {
+      p {
+        margin-top: 16px !important;
+        margin-bottom: 0px;
+
+        color: var(--Text-Texto-Default, #0a2f2a);
+
+        /* Body/Regular */
+        font-family: "RDModern";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 187.5% */
+      }
+    }
+
+    .accordion-button[aria-expanded="true"] {
+      background-color: #0a2f2a;
+      transition: all 0.3s ease-in-out;
+      border: 1px solid #0a2f2a;
+
+      color: white;
+
+      img {
+        rotate: 45deg;
+        filter: grayscale(1) brightness(18);
+      }
+
+      .other-text-accordion {
+        span {
+          color: white;
+        }
+      }
+    }
+
+    .accordion-button {
+      transition: all 0.3s ease-in-out;
+      border: unset;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: unset;
+      padding: 8px 24px;
+      border-radius: 20px;
+      align-items: center;
+      border: 1px solid #4ca15d;
+
+      color: var(--Brand-Verde-Escuro, #0a2f2a);
+      font-family: "RDModern";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+
+      &:focus {
+        outline: unset;
+      }
+
+      .first-itens-accordion {
+        display: flex;
+        gap: 32px;
+      }
+
+      .other-text-accordion {
+        width: 50%;
+        display: flex;
+        text-align: flex-start;
+      }
+
+      span {
+        color: var(--Brand-Verde-Escuro, #0a2f2a);
+        font-family: "RDModern";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 187%; /* 187.5% */
+      }
+
+      img {
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.infos-adm {
+  h3 {
+  }
+
+  p {
+  }
+
+  .box-infos {
+    margin-bottom: 24px;
+
+    .text-box {
+      border-radius: 55px;
+      padding: 32px;
+      background-color: #d66e0f;
+      width: 100%;
+
+      p {
+        color: var(--Branco, #fff);
+
+        font-family: "RDModern";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 187.5% */
+      }
+    }
+
+    .img {
+      width: 60%;
+
+      img {
+        border-radius: 55px;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.texts-adm {
+  margin-bottom: 64px;
+
+  h3 {
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+
+.itens-timeline {
+  margin-top: 48px;
+}

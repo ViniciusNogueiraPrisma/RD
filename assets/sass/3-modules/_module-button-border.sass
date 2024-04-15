@@ -1,0 +1,103 @@
+// ==========================================================================
+// MODULES > BUTTON BORDER
+// BOOTSTRAP.SCSS REQUIRED
+// ==========================================================================
+// Add to variables file:
+//		  $color-config:(	 "blue":   #0000FF, 
+//							  "red":	#ff0000
+//		  );
+//		  **delete "blue" and "red", and add every main colors of your theme**
+//
+// Usage in HTML:
+// <a href="#" class="btn-border-blue-red">
+//   HOVER ME!!
+// </a>
+
+[class*="btn-border"]
+	display: inline-block
+	padding: 10px 15px
+	border-radius: 3px
+	border: 1px solid #505050				 // DEFAULT ENDING COLOR 
+	background-color: #c0c0c0				 // DEFAULT STARTING COLOR
+	color: #505050							 // DEFAULT ENDING COLOR
+	text-align: center
+	text-decoration: none
+	@include transition(all 0.2s ease-out)
+
+	&:hover
+		text-decoration: none
+		background-color: #505050			  // DEFAULT ENDING COLOR
+		color: #c0c0c0						  // DEFAULT STARTING COLOR
+
+
+	// STARTS WITH ...
+	
+	// Transparent
+	&[class*="transparent-"]:hover
+		color: #FFF							 // It MUST be white
+
+	&[class*="transparent-"]
+		background-color: transparent
+
+	// White
+	&[class*="white-"]:hover
+		color: #FFF
+
+	&[class*="white-"]
+		border-color: #FFF					  // If ending color is transparent
+		background-color: #FFF
+
+	@each $color in $color-config
+		&[class*="#{nth($color, 1)}-"]:hover
+			color: nth($color, 2)
+
+		&[class*="#{nth($color, 1)}-"]
+			border-color: nth($color, 2)		// If ending color is transparent
+			background-color: nth($color, 2)
+
+
+	// ENDS WITH ...
+
+	// Transparent
+	&[class*="-transparent "]
+		// border-color:					// In this case, the border-color is the starting color, not the ending.
+		color: #FFF							// If starting color is transparent
+
+		&:hover
+			background-color: transparent
+
+	// ONLY in case from white to transparent
+	&[class*="white-transparent "]
+		color: rgba(0, 0, 0, 0.2)
+
+	// White
+	&[class*="-white "]
+		border-color: #FFF
+		color: #FFF
+
+		&:hover
+			background-color: #FFF
+
+	// ONLY in case from transparent to white
+	&[class*="transparent-white "]:hover
+		color: rgba(0, 0, 0, 0.2)
+	
+	@each $color in $color-config
+		&[class*="-#{nth($color, 1)} "]
+			border-color: nth($color, 2)
+			color: nth($color, 2)
+
+			&:hover
+				background-color: nth($color, 2)
+
+
+body.access_base_dark
+	[class*="btn-border"]
+		@each $color in $color-config
+			&[class*="-#{nth($color, 1)} "]
+				border-color: #d2d2d2
+				color: #d2d2d2
+
+				&:hover
+					background-color: #d2d2d2
+					color: #242424

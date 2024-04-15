@@ -1,0 +1,28 @@
+// ==========================================================================
+// BASICS > SPACERS
+// ==========================================================================
+
+@each $value in $spacer-config
+	.spacer-#{nth($value, 1)}
+		display: block
+		height: nth($value, 2)
+
+@include media-breakpoint-down(lg)
+	@each $value in $spacer-config
+		.spacer-#{nth($value, 1)}
+			height: nth($value, 3)
+
+@include media-breakpoint-down(md)
+	@each $value in $spacer-config
+		.spacer-#{nth($value, 1)}
+			height: nth($value, 4)
+
+@include media-breakpoint-down(sm)
+	@each $value in $spacer-config
+		.spacer-#{nth($value, 1)}
+			height: nth($value, 5)
+
+@include media-breakpoint-down(xs)
+	@each $value in $spacer-config
+		.spacer-#{nth($value, 1)}
+			height: nth($value, 6)

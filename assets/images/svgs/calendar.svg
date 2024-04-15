@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.707" height="15.709" viewBox="0 0 15.707 15.709">
+  <g id="calendar" transform="translate(-493.947 -410.903)">
+    <path id="Path_83" data-name="Path 83" d="M508.351,412.377h-2.129V411.4a.491.491,0,0,0-.982,0v.984h-2.946V411.4a.491.491,0,0,0-.982,0v.984h-2.945V411.4a.491.491,0,0,0-.982,0v.984h-2.129a1.309,1.309,0,0,0-1.309,1.309h0V425.3a1.309,1.309,0,0,0,1.309,1.309h13.09a1.309,1.309,0,0,0,1.309-1.309h0V413.686A1.31,1.31,0,0,0,508.351,412.377Zm.327,12.926a.327.327,0,0,1-.327.327h-13.09a.327.327,0,0,1-.327-.327V413.686a.327.327,0,0,1,.327-.327h2.129v.982a.491.491,0,0,0,.982,0v-.982h2.945v.982a.491.491,0,0,0,.982,0v-.982h2.946v.982a.491.491,0,0,0,.982,0v-.982h2.129a.327.327,0,0,1,.327.327Z" transform="translate(0)" fill="#000"/>
+    <rect id="Rectangle_16" data-name="Rectangle 16" width="1.963" height="1.473" transform="translate(497.387 416.795)" fill="#000"/>
+    <rect id="Rectangle_17" data-name="Rectangle 17" width="1.963" height="1.473" transform="translate(497.387 419.249)" fill="#000"/>
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="1.963" height="1.473" transform="translate(497.387 421.704)" fill="#000"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" width="1.963" height="1.473" transform="translate(500.823 421.704)" fill="#000"/>
+    <rect id="Rectangle_20" data-name="Rectangle 20" width="1.963" height="1.473" transform="translate(500.823 419.249)" fill="#000"/>
+    <rect id="Rectangle_21" data-name="Rectangle 21" width="1.963" height="1.473" transform="translate(500.823 416.795)" fill="#000"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" width="1.964" height="1.473" transform="translate(504.26 421.704)" fill="#000"/>
+    <rect id="Rectangle_23" data-name="Rectangle 23" width="1.964" height="1.473" transform="translate(504.26 419.249)" fill="#000"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="1.964" height="1.473" transform="translate(504.26 416.795)" fill="#000"/>
+  </g>
+</svg>

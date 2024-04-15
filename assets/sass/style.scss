@@ -1,0 +1,74 @@
+// ==========================================================================
+// THEME
+// BOOTSTRAP REQUIRED - (for media queries variables)
+// ==========================================================================
+
+// Variables
+@import "variables";
+
+// Vendors
+@import "0-vendors/bootstrap/functions";
+@import "0-vendors/bootstrap/variables";
+@import "0-vendors/bootstrap-override";
+@import "0-vendors/bootstrap/mixins";
+@import "0-vendors/bootstrap/root";
+@import "0-vendors/bootstrap/reboot";
+@import "0-vendors/bootstrap/type";
+@import "0-vendors/bootstrap/images";
+@import "0-vendors/bootstrap/code";
+@import "0-vendors/bootstrap/grid";
+@import "0-vendors/bootstrap/tables";
+@import "0-vendors/bootstrap/forms";
+@import "0-vendors/bootstrap/buttons";
+@import "0-vendors/bootstrap/transitions";
+@import "0-vendors/bootstrap/dropdown";
+@import "0-vendors/bootstrap/button-group";
+@import "0-vendors/bootstrap/input-group";
+@import "0-vendors/bootstrap/custom-forms";
+@import "0-vendors/bootstrap/nav";
+@import "0-vendors/bootstrap/navbar";
+@import "0-vendors/bootstrap/card";
+@import "0-vendors/bootstrap/breadcrumb";
+@import "0-vendors/bootstrap/pagination";
+@import "0-vendors/bootstrap/badge";
+@import "0-vendors/bootstrap/jumbotron";
+@import "0-vendors/bootstrap/alert";
+@import "0-vendors/bootstrap/progress";
+@import "0-vendors/bootstrap/media";
+@import "0-vendors/bootstrap/list-group";
+@import "0-vendors/bootstrap/close";
+@import "0-vendors/bootstrap/toasts";
+@import "0-vendors/bootstrap/modal";
+@import "0-vendors/bootstrap/tooltip";
+@import "0-vendors/bootstrap/popover";
+@import "0-vendors/bootstrap/carousel";
+@import "0-vendors/bootstrap/spinners";
+@import "0-vendors/bootstrap/utilities";
+@import "0-vendors/bootstrap/print";
+@import "0-vendors/owl.carousel.min";
+@import "0-vendors/owl.theme.default.min";
+@import "0-vendors/icomoon";
+
+// 1 - TOOLS
+@import "1-tools/colors";
+
+// 2 - BASICS
+@import "2-basics/body-element";
+@import "2-basics/typography";
+@import "2-basics/selection-colors";
+@import "2-basics/background-colors";
+@import "2-basics/spacers";
+@import "2-basics/globals";
+
+// 3 - MODULES
+// There are some great modules available for use here - > https://gist.github.com/claudiobonfati.
+@import "3-modules/module-button-border";
+@import "3-modules/module-button-reverse";
+@import "3-modules/module-button-icon";
+
+// 4 - LAYOUT
+@import "4-layout/header";
+@import "4-layout/banner";
+@import "4-layout/content";
+@import "4-layout/footer";
+@import "4-layout/impressao__rss__cotacao";
