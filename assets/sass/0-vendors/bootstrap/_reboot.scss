@@ -2996,12 +2996,144 @@ template {
 
   small {
     color: var(--Text-Texto-Default, #0a2f2a);
-
-    /* Body/Small */
     font-family: "RDModern";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+}
+
+.itens-cobertura {
+  margin-top: 48px;
+  margin-bottom: 64px;
+
+  .table-theme-01 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    display: inline-table;
+
+    thead {
+      tr {
+        background-color: #4ca15d;
+
+        th {
+          color: var(--Branco, #fff);
+          border-bottom: unset !important;
+          text-align: center;
+          vertical-align: middle !important;
+
+          /* Body/Regular Bold */
+          font-family: "RDModern";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 30px; /* 187.5% */
+        }
+
+        th:first-child {
+          border-top-left-radius: 55px;
+          border-bottom-left-radius: 55px;
+        }
+
+        th:last-child {
+          border-top-right-radius: 55px;
+          border-bottom-right-radius: 55px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          border-top: unset;
+          border-bottom: 1px solid #a89b91;
+          padding: 12px 0px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.dividendos-a {
+  .first-box {
+    h3 {
+      strong {
+        color: var(--Laranja-claro, #f4b36f);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+      }
+    }
+  }
+}
+
+.color-change {
+  color: #d66e0f;
+}
+
+.section-glossario {
+  margin-top: 48px;
+  margin-bottom: 64px;
+
+  .list-nav-glossario {
+    .slick-track {
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slick-current {
+      .div-slick-a {
+        a {
+          padding: 12px 24px;
+          background-color: #4ca15d;
+          color: white;
+          border-radius: 20px;
+          transition: 0.3s ease-in;
+        }
+      }
+    }
+
+    .slick-slide {
+      margin-left: 5px;
+    }
+
+    .div-slick-a {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        padding: 12px;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+
+        color: var(--Brand-Laranja, #d66e0f);
+
+        /* Button/Medium */
+        font-family: "RDModern";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16.8px; /* 120% */
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .for-glossario-conteudo {
+    padding: 0;
+    margin-top: 64px;
   }
 }
