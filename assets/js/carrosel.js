@@ -1,3 +1,9 @@
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 $(".list-nav-glossario").slick({
   slidesToShow: 26,
   slidesToScroll: 1,

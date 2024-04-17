@@ -3019,6 +3019,66 @@ template {
   display: block !important;
 }
 
+.container-swiper .mySwiper .swiper-wrapper .swiper-slide .img-banner {
+  border-radius: 55px;
+}
+.container-swiper .mySwiper .swiper-wrapper .swiper-slide .img-banner img {
+  border-radius: 55px;
+}
+.container-swiper .mySwiper .swiper-wrapper .swiper-slide .banner-content::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  border-radius: 55px;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.3841911765) 0%, rgba(0, 0, 0, 0.2833508403) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.3841911765) 0%, rgba(0, 0, 0, 0.2833508403) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3841911765) 0%, rgba(0, 0, 0, 0.2833508403) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.container-swiper .mySwiper .swiper-wrapper .swiper-slide .banner-content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.container-swiper .mySwiper .swiper-wrapper .swiper-slide .banner-content span {
+  color: #fffec7;
+  font-size: 18px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.container-swiper .mySwiper .swiper-wrapper .swiper-slide .banner-content h3 {
+  font-family: "RDContrast";
+  color: #ffffff;
+  font-size: 52px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.container-swiper .mySwiper .swiper-pagination .swiper-pagination-bullet {
+  border-radius: 55px;
+  opacity: 1;
+  background-color: transparent;
+  border: 2px solid #f4b36f;
+  transition: 0.3s ease-in-out;
+}
+.container-swiper .mySwiper .swiper-pagination .swiper-pagination-bullet-active {
+  border: 1px solid #f4b36f;
+  background-color: #f4b36f;
+  width: 15px;
+  transition: 0.3s ease-in-out;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
