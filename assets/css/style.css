@@ -614,7 +614,7 @@ template {
   border-radius: 55px;
 }
 #footer-page .footer-indices {
-  padding: 24px 0;
+  padding: 24px;
   background-color: #4ca15d;
   border-radius: 55px;
 }
@@ -774,6 +774,19 @@ template {
   transition: all 0.3s;
 }
 
+@media (max-width: 1049px) {
+  .destaques-home {
+    flex-direction: column;
+  }
+  .destaques-home section:first-child {
+    margin-bottom: 48px;
+    padding-right: 0px;
+  }
+  .destaques-home section {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
 .destaques-home section:first-child {
   border-right: 1px solid rgba(168, 155, 145, 0.21);
   padding-right: 43px;
@@ -1021,6 +1034,11 @@ template {
   justify-content: center;
   padding: 22px !important;
 }
+@media (max-width: 864px) {
+  .grid-conheca .item-conheca {
+    padding: 48px 22px !important;
+  }
+}
 .grid-conheca .item-conheca h2 {
   color: #ffffff;
 }
@@ -1048,8 +1066,12 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 0px;
+}
+@media (max-width: 768px) {
+  .grid-conheca .item-empresas {
+    padding: 48px 0px;
+  }
 }
 
 .idiomas.show .dropdown-menu {
@@ -1209,10 +1231,31 @@ template {
   margin-right: 0px !important;
   margin-left: 0px !important;
 }
+@media (max-width: 1042px) {
+  .row-footer {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 764px) {
+  .row-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 616px) {
+  .row-footer {
+    grid-template-columns: 1fr;
+  }
+}
 .row-footer .item-row-footer {
   width: fit-content !important;
   max-width: 17% !important;
   padding: 0 !important;
+}
+@media (max-width: 1042px) {
+  .row-footer .item-row-footer {
+    max-width: 100% !important;
+  }
 }
 
 .language-footer {
@@ -2761,6 +2804,21 @@ template {
   font-style: normal;
   font-weight: 500;
   line-height: 16.8px; /* 120% */
+}
+
+.etica .img img {
+  width: 600px;
+}
+
+.box-etica {
+  background-color: #4ca15d !important;
+}
+.box-etica h3 {
+  color: var(--Branco, #fff) !important;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38.4px; /* 120% */
 }
 
 h1, h2, h3, h4, h5, h6,

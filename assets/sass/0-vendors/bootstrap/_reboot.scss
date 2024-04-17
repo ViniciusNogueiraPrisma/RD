@@ -921,7 +921,7 @@ template {
   }
 
   .footer-indices {
-    padding: 24px 0;
+    padding: 24px;
     background-color: #4ca15d;
     border-radius: 55px;
 
@@ -930,8 +930,6 @@ template {
       justify-content: center;
       align-items: center;
       gap: 28px;
-      //border-top: 1px solid #fff;
-      //padding-top: 15px;
       flex-wrap: wrap;
 
       img {
@@ -1101,6 +1099,20 @@ template {
 }
 
 .destaques-home {
+  @media (max-width: 1049px) {
+    flex-direction: column;
+
+    section:first-child {
+      margin-bottom: 48px;
+      padding-right: 0px;
+    }
+
+    section {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+  }
+
   section:first-child {
     border-right: 1px solid rgba(168, 155, 145, 0.21);
     padding-right: 43px;
@@ -1449,6 +1461,10 @@ template {
     justify-content: center;
     padding: 22px !important;
 
+    @media (max-width: 864px) {
+      padding: 48px 22px !important;
+    }
+
     h2 {
       color: #ffffff;
     }
@@ -1481,8 +1497,13 @@ template {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    // padding-top: 96px;
+    // padding-bottom: 96px;
+    padding: 96px 0px;
+
+    @media (max-width: 768px) {
+      padding: 48px 0px;
+    }
   }
 }
 
@@ -1559,6 +1580,9 @@ template {
   @media (max-width: 376px) {
     height: 180px;
   }
+}
+
+.dropdown-menu-right {
 }
 
 .menu-mobile {
@@ -1660,14 +1684,30 @@ template {
 .row-footer {
   display: flex;
   justify-content: space-between;
-  // gap: 40px;
   margin-right: 0px !important;
   margin-left: 0px !important;
+
+  @media (max-width: 1042px) {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 764px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 616px) {
+    grid-template-columns: 1fr;
+  }
 
   .item-row-footer {
     width: fit-content !important;
     max-width: 17% !important;
     padding: 0 !important;
+
+    @media (max-width: 1042px) {
+      max-width: 100% !important;
+    }
   }
 }
 
@@ -3585,5 +3625,25 @@ template {
       font-weight: 500;
       line-height: 16.8px; /* 120% */
     }
+  }
+}
+
+.etica {
+  .img {
+    img {
+      width: 600px;
+    }
+  }
+}
+
+.box-etica {
+  background-color: #4ca15d !important;
+
+  h3 {
+    color: var(--Branco, #fff) !important;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38.4px; /* 120% */
   }
 }
