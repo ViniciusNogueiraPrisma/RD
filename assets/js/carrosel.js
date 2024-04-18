@@ -1,7 +1,14 @@
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
+});
+
+$(".toggle-mobile-menu").click(function () {
+  $(".mobile-menu-div").toggleClass("active");
+  $(".header").toggleClass("open-menu");
+  $("body").toggleClass("open-menu");
 });
 
 $(".list-nav-glossario").slick({
