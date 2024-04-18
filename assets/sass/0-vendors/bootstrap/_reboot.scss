@@ -3839,16 +3839,30 @@ template {
   .mySwiper {
     .swiper-wrapper {
       .swiper-slide {
+        height: 335px;
+
+        @media (max-width: 872px) {
+          height: 520px;
+        }
+
         .img-banner {
           border-radius: 55px;
 
           img {
             border-radius: 55px;
+            height: 335px;
+            width: 100%;
+            object-fit: cover;
+
+            @media (max-width: 872px) {
+              height: 520px;
+            }
           }
         }
 
         .banner-content::after {
           content: "";
+          height: 335px;
           position: absolute;
           z-index: -1;
           width: 100%;
@@ -3874,6 +3888,10 @@ template {
             rgba(0, 0, 0, 0.28335084033613445) 100%
           );
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+
+          @media (max-width: 872px) {
+            height: 520px;
+          }
         }
 
         .banner-content {
@@ -3885,7 +3903,13 @@ template {
           justify-content: center;
           display: flex;
           flex-direction: column;
-          padding: 24px;
+          padding: 24px 98px;
+          height: 335px;
+
+          @media (max-width: 872px) {
+            height: 520px;
+            padding: 24px 28px;
+          }
 
           span {
             color: #fffec7;
@@ -3901,6 +3925,11 @@ template {
             margin-bottom: 24px;
             font-weight: 500;
             line-height: 100%;
+
+            @media (max-width: 872px) {
+              font-size: 42px;
+              line-height: 45px;
+            }
           }
 
           // a {
@@ -3932,6 +3961,8 @@ template {
         background-color: transparent;
         border: 2px solid #f4b36f;
         transition: 0.3s ease-in-out;
+        height: 7px;
+        width: 7px;
       }
 
       .swiper-pagination-bullet-active {
@@ -3943,7 +3974,6 @@ template {
     }
   }
 }
-
 
 //menu css
 
@@ -3972,6 +4002,7 @@ body {
   height: 100vh;
   position: relative;
   padding: 24px 4px 24px;
+  padding-bottom: 68px;
 
   width: 100%;
 
@@ -4077,8 +4108,14 @@ body {
     flex-wrap: wrap;
 
     gap: 14px;
-    margin-top: 32px;
+    // margin-top: 32px;
     margin-bottom: 16px;
+
+    .inst {
+      a {
+        color: #000;
+      }
+    }
 
     > a {
       // font-size: rem(14);
@@ -4087,11 +4124,13 @@ body {
       font-weight: 400;
       line-height: 14.4px;
       word-wrap: break-word;
+      text-decoration: none;
     }
 
     ul {
       display: flex;
       align-items: center;
+      list-style: none;
 
       padding-left: 0;
 
@@ -4106,7 +4145,7 @@ body {
           // Digite aqui a sua busca
           color: #666666;
           font-family: Arial;
-          font-weight: 400;
+          font-weight: 600;
           line-height: 14.4px;
           word-wrap: break-word;
         }
@@ -4212,9 +4251,9 @@ body {
 
         // QUEM SOMOS
         color: #1d1d1d;
-        font-size: 20px;
-        font-family: var(--font-sans);
-        font-weight: 600;
+        font-size: 16px;
+        font-family: "RDModern", Verdana, Helvetica, Arial, sans-serif;
+        font-weight: 500;
         line-height: 28px;
         text-transform: uppercase;
         word-wrap: break-word;
@@ -4246,8 +4285,8 @@ body {
         &:not(.collapsed) {
           background: none;
           box-shadow: none;
-          color: #ed7d31;
-          border-bottom: 1px solid #ed7d31;
+          color: #016f33;
+          border-bottom: 1px solid #016f33;
         }
       }
 
@@ -4256,7 +4295,7 @@ body {
 
         .pages {
           padding-left: 0px;
-          margin: 16px 0;
+          margin: 16px 8px;
 
           li {
             list-style: none;
@@ -4271,7 +4310,7 @@ body {
               // Sobre Nós
               color: #333333;
               font-size: 16px;
-              font-family: var(--font-sans);
+              font-family: "RDModern", Verdana, Helvetica, Arial, sans-serif;
               font-weight: 400;
               line-height: 24.8px;
               word-wrap: break-word;
@@ -4335,8 +4374,17 @@ body {
   right: 0;
   background-color: #fff;
 
+  top: 65px;
+
   .menu-body {
     display: flex;
+
+    .accordion-item {
+
+      h3 {
+        padding-left: 0px !important;
+      }
+    }
   }
 
   &.active {
@@ -4346,6 +4394,9 @@ body {
       right: 0;
 
       .toggle-mobile-menu {
+        border: none;
+        background: unset;
+
         span {
           transform: rotate(45deg);
           background: var(--text-black);
@@ -4365,4 +4416,9 @@ body {
       }
     }
   }
+}
+
+.toggle-mobile-menu {
+  border: none;
+  background: unset;
 }
