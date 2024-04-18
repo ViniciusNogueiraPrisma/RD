@@ -3952,23 +3952,8 @@ template {
           border-radius: 55px;
           left: 0;
 
-          background: rgb(0, 0, 0);
-          background: -moz-linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.3841911764705882) 0%,
-            rgba(0, 0, 0, 0.28335084033613445) 100%
-          );
-          background: -webkit-linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.3841911764705882) 0%,
-            rgba(0, 0, 0, 0.28335084033613445) 100%
-          );
-          background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.3841911764705882) 0%,
-            rgba(0, 0, 0, 0.28335084033613445) 100%
-          );
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+          background: rgb(0,0,0);
+          background: linear-gradient(0deg, rgba(0,0,0,0.6306897759103641) 0%, rgba(134,134,134,0) 100%);
 
           @media (max-width: 872px) {
             height: 520px;

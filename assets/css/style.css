@@ -3121,10 +3121,7 @@ template {
   border-radius: 55px;
   left: 0;
   background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.3841911765) 0%, rgba(0, 0, 0, 0.2833508403) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.3841911765) 0%, rgba(0, 0, 0, 0.2833508403) 100%);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3841911765) 0%, rgba(0, 0, 0, 0.2833508403) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6306897759) 0%, rgba(134, 134, 134, 0) 100%);
 }
 @media (max-width: 872px) {
   .container-swiper .mySwiper .swiper-wrapper .swiper-slide .banner-content::after {
