@@ -496,6 +496,10 @@
       width: calc(50% - 32px);
       text-align: right;
       position: relative;
+      
+      p {
+        margin-top: 8px;
+      }
 
       @media (max-width: 1199px) {
         text-align: left;
@@ -503,12 +507,14 @@
       }
 
       .ano {
+        margin-bottom: 16px;
+
+        color: var(--Text-Texto-Default, #0a2f2a);
+        font-family: "RDContrast";
+        font-size: 32px;
         font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 60px;
-        margin-bottom: 5px;
-        color: #00813b;
+        font-weight: 500;
+        line-height: 38.4px;
       }
 
       &:before {
@@ -666,9 +672,9 @@
 
   thead {
     th {
-      color: var(--Grayscale-grayscale-color-500, #BBB);
+      color: var(--Grayscale-grayscale-color-500, #bbb);
       text-align: center;
-      
+
       /* Body/Regular */
       font-family: "RDModern";
       font-size: 16px;
@@ -695,7 +701,7 @@
         // border: 1px solid #f0f0f0;
         position: relative;
         border-radius: 50px;
-        background: var(--Grayscale-grayscale-color-800, #FAFAFA);
+        background: var(--Grayscale-grayscale-color-800, #fafafa);
 
         &::after {
           content: "";
@@ -843,6 +849,11 @@
     .date-calendar {
       font-size: 12px;
       margin-bottom: 4px;
+
+      p {
+        margin-bottom: 8px;
+        font-size: 12px;
+      }
     }
 
     .text-list-item {
