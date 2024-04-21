@@ -696,12 +696,14 @@
         text-align: center;
         display: block;
         font-weight: normal;
-        // padding: 4px 4px 16px 4px;
         padding: 12px;
-        // border: 1px solid #f0f0f0;
         position: relative;
         border-radius: 50px;
         background: var(--Grayscale-grayscale-color-800, #fafafa);
+
+        @media(max-width: 403px) {
+          padding: 10px;
+        }
 
         &::after {
           content: "";

@@ -982,6 +982,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
 }
 .section-conheca-rd .item a span {
   color: #ffffff;
@@ -2571,6 +2572,12 @@ template {
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+}
+@media (max-width: 792px) {
+  .itens-cobertura .table-theme-01 thead tr th {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 .itens-cobertura .table-theme-01 thead tr th:first-child {
   border-top-left-radius: 55px;
@@ -7948,6 +7955,11 @@ input[type=button].btn-block {
   position: relative;
   border-radius: 50px;
   background: var(--Grayscale-grayscale-color-800, #fafafa);
+}
+@media (max-width: 403px) {
+  .ui-datepicker-calendar tbody td a {
+    padding: 10px;
+  }
 }
 .ui-datepicker-calendar tbody td a::after {
   content: "";
