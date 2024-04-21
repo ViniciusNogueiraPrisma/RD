@@ -739,7 +739,7 @@ template {
   margin: 0 !important;
   border-radius: 0 !important;
   border: 0 !important;
-  padding: 37px 49px !important;
+  padding: 28px 49px !important;
 }
 .searchbox .container {
   display: flex !important;
@@ -3836,6 +3836,52 @@ body.open-menu::after {
 
 .table-div tbody tr td:first-child {
   font-weight: 500;
+}
+
+.texts-rendimento {
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+.texts-rendimento h4 {
+  color: var(--Text-Texto-Default, #0a2f2a);
+  font-family: "RDModern";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+  margin-bottom: 24px;
+}
+.texts-rendimento h3 {
+  color: var(--Text-Texto-Default, #0a2f2a);
+  margin-bottom: 24px;
+  /* Titles/Desktop/H3 */
+  font-family: "RD Contrast Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38.4px; /* 120% */
+}
+.texts-rendimento p {
+  color: var(--Text-Texto-Default, #0a2f2a);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+.texts-rendimento p a {
+  color: var(--Laranja, #d66e0f);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration-line: underline;
+}
+.texts-rendimento ul {
+  margin-bottom: 24px;
+}
+.texts-rendimento ul li {
+  list-style: auto;
+  margin-bottom: 6px;
 }
 
 h1, h2, h3, h4, h5, h6,
