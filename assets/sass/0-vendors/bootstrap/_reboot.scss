@@ -3658,6 +3658,10 @@ template {
       font-style: normal;
       font-weight: 600;
       line-height: 120%; /* 24px */
+
+      @media(max-width: 720px) {
+        font-size: 18px;
+      }
     }
   }
 }

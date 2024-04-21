@@ -2883,6 +2883,11 @@ template {
   font-weight: 600;
   line-height: 120%; /* 24px */
 }
+@media (max-width: 720px) {
+  .box-aten a span {
+    font-size: 18px;
+  }
+}
 
 .box-aten-2 {
   background-color: #d66e0f !important;
