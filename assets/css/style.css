@@ -3167,6 +3167,10 @@ template {
   .itens-full-gov .infos-adm .box-infos {
     flex-direction: column;
   }
+  .itens-full-gov .infos-adm .box-infos .img img {
+    height: 300px;
+    width: 100%;
+  }
   .itens-full-gov .infos-adm .box-infos .img {
     width: 100%;
   }

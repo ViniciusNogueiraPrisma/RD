@@ -2446,7 +2446,7 @@ template {
         gap: 32px;
         text-align: start;
 
-        @media(max-width: 672px) {
+        @media (max-width: 672px) {
           gap: 12px;
         }
       }
@@ -2456,7 +2456,7 @@ template {
         display: flex;
         text-align: flex-start;
 
-        @media(max-width: 672px) {
+        @media (max-width: 672px) {
           width: 100%;
         }
       }
@@ -3994,6 +3994,11 @@ template {
   @media (max-width: 786px) {
     .infos-adm .box-infos {
       flex-direction: column;
+    }
+
+    .infos-adm .box-infos .img img {
+      height: 300px;
+      width: 100%;
     }
 
     .infos-adm .box-infos .img {
