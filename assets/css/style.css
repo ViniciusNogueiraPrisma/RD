@@ -776,6 +776,7 @@ template {
   color: #ffffff;
   padding: 17px 42px;
   display: flex;
+  align-items: center;
   gap: 10px;
   width: max-content;
   transition: all 0.3s;
@@ -7184,6 +7185,7 @@ input[type=button].btn-block {
   font-weight: 400;
   color: #0a2f2a !important;
   transition: all 0.2s;
+  font-size: 16px;
   color: var(--Brand-Verde-Escuro, #0a2f2a);
 }
 .navbar-nav .nav-link::after {
