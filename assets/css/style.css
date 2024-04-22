@@ -713,7 +713,7 @@ template {
 }
 @media (max-width: 1049px) {
   .btn-search .feather-search {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 }
 
