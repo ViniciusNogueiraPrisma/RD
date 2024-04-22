@@ -1033,7 +1033,7 @@ template {
   .feather-search {
     width: 20px;
 
-    @media(max-width: 1049px) {
+    @media (max-width: 1049px) {
       margin-top: 4px;
     }
   }
@@ -4900,5 +4900,13 @@ body {
         }
       }
     }
+  }
+}
+
+.col-calendar-2 {
+  @media (max-width: 690px) {
+    border: 1px solid red;
+    padding-left: 0px !important ;
+    padding-right: 0px !important;
   }
 }
