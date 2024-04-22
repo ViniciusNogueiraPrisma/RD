@@ -1032,6 +1032,10 @@ template {
 
   .feather-search {
     width: 20px;
+
+    @media(max-width: 1049px) {
+      margin-top: 4px;
+    }
   }
 }
 
@@ -4240,7 +4244,6 @@ body {
   }
   .header-menu {
     display: flex;
-    justify-content: flex-end;
     justify-content: space-between;
     padding: 0 0 24px 0;
 
@@ -4601,7 +4604,7 @@ body {
   right: 0;
   background-color: #fff;
 
-  top: 65px;
+  top: 0;
 
   .menu-body {
     display: flex;
@@ -4619,27 +4622,27 @@ body {
     .mobile-menu {
       right: 0;
 
-      .toggle-mobile-menu {
-        border: none;
-        background: unset;
+      // .toggle-mobile-menu {
+      //   border: none;
+      //   background: unset;
 
-        span {
-          transform: rotate(45deg);
-          background: var(--text-black);
+      //   span {
+      //     transform: rotate(45deg);
+      //     background: var(--text-black);
 
-          &::before {
-            top: 0;
-            background: var(--text-black);
-            transform: rotate(90deg);
-          }
+      //     &::before {
+      //       top: 0;
+      //       background: var(--text-black);
+      //       transform: rotate(90deg);
+      //     }
 
-          &::after {
-            bottom: 0;
-            background: var(--text-black);
-            transform: rotate(90deg);
-          }
-        }
-      }
+      //     &::after {
+      //       bottom: 0;
+      //       background: var(--text-black);
+      //       transform: rotate(90deg);
+      //     }
+      //   }
+      // }
     }
   }
 }
@@ -4860,6 +4863,42 @@ body {
     li {
       list-style: auto;
       margin-bottom: 6px;
+    }
+  }
+}
+
+.mobile-menu-div.active {
+  .header-menu {
+    .div-menu-open {
+      margin-right: 20px;
+
+      .toggle-mobile-menu {
+        span::before {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 21px;
+          border-radius: 2px;
+          display: block;
+          position: absolute;
+          background: #000;
+          transition: 0.5s ease;
+          rotate: 47deg;
+        }
+
+        span::after {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 21px;
+          border-radius: 2px;
+          display: block;
+          position: absolute;
+          background: black;
+          transition: 0.5s ease;
+          rotate: 134deg;
+        }
+      }
     }
   }
 }

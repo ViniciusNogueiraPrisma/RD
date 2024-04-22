@@ -711,6 +711,11 @@ template {
 .btn-search .feather-search {
   width: 20px;
 }
+@media (max-width: 1049px) {
+  .btn-search .feather-search {
+    margin-top: 4px;
+  }
+}
 
 .btn-menu-mobile {
   color: #0a2f2a !important;
@@ -3360,7 +3365,6 @@ body.open-menu::after {
 }
 .mobile-menu .header-menu {
   display: flex;
-  justify-content: flex-end;
   justify-content: space-between;
   padding: 0 0 24px 0;
 }
@@ -3647,7 +3651,7 @@ body.open-menu::after {
   transition: 0.6s;
   right: 0;
   background-color: #fff;
-  top: 65px;
+  top: 0;
 }
 .mobile-menu-div .menu-body {
   display: flex;
@@ -3660,24 +3664,6 @@ body.open-menu::after {
 }
 .mobile-menu-div.active .mobile-menu {
   right: 0;
-}
-.mobile-menu-div.active .mobile-menu .toggle-mobile-menu {
-  border: none;
-  background: unset;
-}
-.mobile-menu-div.active .mobile-menu .toggle-mobile-menu span {
-  transform: rotate(45deg);
-  background: var(--text-black);
-}
-.mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::before {
-  top: 0;
-  background: var(--text-black);
-  transform: rotate(90deg);
-}
-.mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::after {
-  bottom: 0;
-  background: var(--text-black);
-  transform: rotate(90deg);
 }
 
 .toggle-mobile-menu {
@@ -3882,6 +3868,34 @@ body.open-menu::after {
 .texts-rendimento ul li {
   list-style: auto;
   margin-bottom: 6px;
+}
+
+.mobile-menu-div.active .header-menu .div-menu-open {
+  margin-right: 20px;
+}
+.mobile-menu-div.active .header-menu .div-menu-open .toggle-mobile-menu span::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 21px;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  background: #000;
+  transition: 0.5s ease;
+  rotate: 47deg;
+}
+.mobile-menu-div.active .header-menu .div-menu-open .toggle-mobile-menu span::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 21px;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  background: black;
+  transition: 0.5s ease;
+  rotate: 134deg;
 }
 
 h1, h2, h3, h4, h5, h6,
