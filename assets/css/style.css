@@ -1475,11 +1475,11 @@ template {
 }
 .itens-2 .text-first h3 {
   color: var(--Brand-Verde-Escuro, #0a2f2a);
-  /* Titles/Desktop/H3 */
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 38.4px;
+  font-family: "RD Contrast Variable";
 }
 .itens-2 .text-first span {
   color: var(--Branco, #fff);
@@ -1567,7 +1567,7 @@ template {
 }
 .nossas-marcas-qs .text-nm .first-box {
   border-radius: 55px;
-  padding: 32px;
+  padding: 30px;
   background-color: #d66e0f;
   display: flex;
   flex-direction: column;
@@ -1576,7 +1576,8 @@ template {
 }
 .nossas-marcas-qs .text-nm .first-box h3 {
   color: var(--Brand-Verde-Escuro, #0a2f2a);
-  font-size: 32px;
+  font-family: "RD Contrast Variable";
+  font-size: 31px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 120% */
@@ -1670,6 +1671,7 @@ template {
 }
 .cards-valores .card h3 {
   text-align: center;
+  font-family: "RD Contrast Variable";
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -13849,7 +13851,9 @@ p {
 
 h3 {
   color: var(--Text-Texto-Default, #0A2F2A);
+  font-family: "RD Contrast Variable";
   font-style: normal;
+  font-weight: 600;
   line-height: 38.4px;
 }
 

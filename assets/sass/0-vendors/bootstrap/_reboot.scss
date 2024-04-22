@@ -1944,13 +1944,12 @@ template {
 
     h3 {
       color: var(--Brand-Verde-Escuro, #0a2f2a);
-
-      /* Titles/Desktop/H3 */
-      // font-family: "RD Contrast";
       font-size: 32px;
       font-style: normal;
       font-weight: 600;
       line-height: 38.4px;
+
+      font-family: "RD Contrast Variable";
     }
 
     span {
@@ -2058,7 +2057,7 @@ template {
 
     .first-box {
       border-radius: 55px;
-      padding: 32px;
+      padding: 30px;
       background-color: #d66e0f;
       display: flex;
       flex-direction: column;
@@ -2067,8 +2066,8 @@ template {
 
       h3 {
         color: var(--Brand-Verde-Escuro, #0a2f2a);
-
-        font-size: 32px;
+        font-family: "RD Contrast Variable";
+        font-size: 31px;
         font-style: normal;
         font-weight: 600;
         line-height: 120%; /* 120% */
@@ -2184,7 +2183,7 @@ template {
 
     h3 {
       text-align: center;
-
+      font-family: "RD Contrast Variable";
       font-size: 32px;
       font-style: normal;
       font-weight: 600;
