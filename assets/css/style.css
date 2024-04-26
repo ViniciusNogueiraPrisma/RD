@@ -3944,7 +3944,7 @@ body.open-menu::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("../../../images/404.png");
+  background-image: url("https://rd-viniciusnogueiraprismas-projects.vercel.app/assets/images/404.png");
 }
 .image-bg-404 .texts-error {
   width: 100%;
@@ -3960,7 +3960,6 @@ body.open-menu::after {
 .image-bg-404 .texts-error h1 {
   color: var(--font-title-font-title-color-big, #1d1d1d);
   text-align: center;
-  font-family: "Sofia Sans";
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
