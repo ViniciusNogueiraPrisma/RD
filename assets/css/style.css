@@ -4086,7 +4086,6 @@ body.open-menu::after {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 #ContentInternal_ContentPlaceHolderConteudo_enviarRI {
   top: 22px;
 }
@@ -4142,8 +4141,6 @@ body.open-menu::after {
   border-bottom-left-radius: 33px;
 }
 
-=======
->>>>>>> 212dd92b1366de7c6b0867b66e042ecf145fb2c9
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
@@ -16030,7 +16027,7 @@ body.access_base_dark .close {
 }
 
 .iframe-cotacao-home {
-  margin-bottom: -41px;
+  margin-bottom: -62px;
 }
 
 @media (max-width: 767px) {
